@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body{
+  background-color: #00509d;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.start{
+  font-size: 6vw;
+  width: 50vw;
+  background-color: #00296b;
+  border-radius: 5vw;
+  text-align: center;
+  margin: 20% auto ;
+  cursor: pointer;
+}
+.win{
+  display: none;
+  font-size: 6vw;
+  width: 50vw;
+  text-align: center;
+  margin: 20% auto 0 auto ;
+}
+.wrapper{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: space-evenly;
+}
+
+.grid{
+  height: 32vw;
+  display: grid;
+  grid-template-columns: 10vw 10vw 10vw 10vw ;
+  grid-template-rows: 10vw 10vw 10vw ;
+  column-gap: 1vw;
+  row-gap: 1vw;
+}
+.info-wrapper{
+  width:  50vw;
+  text-align: center;
+  font-size: 3vw;
+}
+.card-holder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2vw;
+}
+
+.fab{
+  font-size: 7vw;
+  text-align: center;
+}
+
+@media only screen and (max-width: 550px){
+  .fab{
+    font-size: 13vw;
+  }
+  .wrapper{
+    flex-direction: column;
+  }
+  .grid{
+    grid-template-columns: 20vw 20vw 20vw 20vw ;
+    grid-template-rows: 20vw 20vw 20vw ;
+    column-gap: 1vw;
+    row-gap: 1vw;
+  }
+}
